@@ -2,7 +2,7 @@
 
 A Raspberry Pi 5 arcade cabinet: a 320×240 SPI panel, an analog joystick
 read through a 16-bit ADC, four buttons, and a launcher that runs real
-Linux games on it.
+Linux games on it. A Pi 4 is fine too.
 
 <p align="center">
   <img src="docs/images/cabinet.jpg" alt="The cabinet, showing the launcher menu on the SPI panel" width="470">
