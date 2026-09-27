@@ -55,8 +55,8 @@ sudo apt install python3-pygame python3-evdev python3-smbus2 \
                  python3-gpiozero python3-lgpio \
                  wlr-randr wmctrl xdotool xterm
 
-git clone https://github.com/urtoosloww/mini-arcade-machine.git
-cd mini-arcade-machine
+git clone https://github.com/traxrobotics/RaspberryPiMiniArcadeMachine.git
+cd RaspberryPiMiniArcadeMachine
 
 # 1. Panel: blacklist fbtft, install the init blob, write the overlay.
 sudo bash scripts/setup_panel.sh
