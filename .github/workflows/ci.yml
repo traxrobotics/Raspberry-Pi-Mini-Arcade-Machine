@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      # The suite needs nothing but pytest. pygame, smbus2, gpiozero and
+      # evdev are all faked in tests/conftest.py, which is the point: the
+      # tests run on any machine, with no Pi and no hardware libraries.
+      - run: pip install pytest
+      - name: Tests (fake hardware, no Pi needed)
+        run: pytest

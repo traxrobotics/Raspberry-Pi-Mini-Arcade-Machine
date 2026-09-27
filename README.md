@@ -1,5 +1,8 @@
 # Mini Arcade Machine
 
+[![CI](https://github.com/traxrobotics/Raspberry-Pi-Mini-Arcade-Machine/actions/workflows/ci.yml/badge.svg)](https://github.com/traxrobotics/Raspberry-Pi-Mini-Arcade-Machine/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 A Raspberry Pi 5 arcade cabinet: a 320×240 SPI panel, an analog joystick
 read through a 16-bit ADC, four buttons, and a launcher that runs real
 Linux games on it. A Pi 4 is fine too.
